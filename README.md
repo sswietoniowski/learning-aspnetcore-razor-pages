@@ -1,4 +1,4 @@
-# Razor-Pages-In-Action
+# Learning ASP.NET Core - Razor Pages
 
 This repository contains the source code for [_ASP.NET Core Razor Pages In Action_]( https://www.manning.com/books/asp-net-core-razor-pages-in-action?utm_source=mikebrind&utm_medium=affiliate&utm_campaign=book_brind_razor_7_26_21&a_aid=mikebrind&a_bid=f71bcc8c), which is currently  in MEAP and is scheduled to be published by [Manning](https://www.manning.com) later in 2022.
 
