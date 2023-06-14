@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Todo>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Todos</h1>
+    <div class="card">
+        <a asp-action="Add">Add</a>
+    </div>
+    <div class="card">
+        <table class="table table-dark">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Task</th>
+                <th>Is Completed</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach(var todo in Model)
+            {
+                <tr>
+                    <td>@todo.Id</td>
+                    <td>@todo.Title</td>
+                    <td>@todo.IsCompleted</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@todo.Id">Edit</a>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

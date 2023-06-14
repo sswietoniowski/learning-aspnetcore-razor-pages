@@ -1,0 +1,19 @@
+﻿@page
+@model TodoRazorPages.Pages.AddModel
+
+<div>
+    <form method="post">
+        <label asp-for="Input.Title"></label>
+        <input asp-for="Input.Title" />
+        <span asp-validation-for="Input.Title"></span>
+        <br />
+        <label asp-for="Input.IsCompleted"></label>
+        <input asp-for="Input.IsCompleted" />
+        <br />
+        <button asp-page="Add">Add</button>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

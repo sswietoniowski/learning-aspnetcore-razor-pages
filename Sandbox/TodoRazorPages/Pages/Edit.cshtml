@@ -1,0 +1,17 @@
+﻿@page "{id:guid}"
+
+@model TodoRazorPages.Pages.EditModel
+
+<div>
+    <form method="post">
+        <input type="hidden" asp-for="@Model.Id" />
+        <label asp-for="Input.Title"></label>
+        <input asp-for="Input.Title" />
+        <br />
+        <label asp-for="Input.IsCompleted"></label>
+        <input asp-for="Input.IsCompleted" />
+        <br />
+        <button asp-page="Edit">Edit</button>
+        <a class="button" asp-page="Index">Cancel</a>
+    </form>
+</div>

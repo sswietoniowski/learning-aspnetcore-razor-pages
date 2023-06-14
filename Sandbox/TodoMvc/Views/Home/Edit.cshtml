@@ -1,0 +1,15 @@
+﻿@model EditViewModel
+
+<div>
+    <form method="post">
+        <input type="hidden" asp-for="Id" />
+        <label asp-for="Title"></label>
+        <input asp-for="Title"/>
+        <br/>
+        <label asp-for="IsCompleted"></label>
+        <input asp-for="IsCompleted"/>
+        <br/>
+        <button asp-action="Edit">Edit</button>
+        <a class="button" asp-action="Index">Cancel</a>
+    </form>
+</div>
